@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOTO-SPEC // Telegram Web App Enduro & Pitbike Parts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter+Tight:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="artboard-header">
+    <div class="header-badge">TELEGRAM WEB APP // UI KIT & FLOWS</div>
+    <h1 class="header-title">MOTO-SPEC // СЕРВИС ПОДБОРА ЗАПЧАСТЕЙ</h1>
+    <p class="header-desc">5 ключевых экранов мобильного приложения для мгновенного подбора и заказа расходников на питбайки и эндуро.</p>
+    <div class="metrics-ticker">
+      <div class="ticker-item"><span class="ticker-num">14 200+</span><span class="ticker-lbl">ДЕТАЛЕЙ В НАЛИЧИИ</span></div>
+      <div class="ticker-item"><span class="ticker-num">15 МИН</span><span class="ticker-lbl">ОТГРУЗКА В ДЕНЬ ЗАКАЗА</span></div>
+      <div class="ticker-item"><span class="ticker-num">100%</span><span class="ticker-lbl">ПРОВЕРКА СОВМЕСТИМОСТИ</span></div>
+      <div class="ticker-item"><span class="ticker-num">24/7</span><span class="ticker-lbl">ПОДДЕРЖКА В TELEGRAM</span></div>
+    </div>
+  </header>
+
+  <main class="artboard-canvas">
+    
+    <!-- ЭКРАН 1: ГЛАВНЫЙ -->
+    <div class="phone-wrapper">
+      <div class="phone">
+        <div class="screen">
+          <div class="twa-header">
+            <span class="twa-btn-close">Закрыть</span>
+            <span class="twa-title">MOTO-SPEC BOT</span>
+            <div class="twa-dots"><span></span><span></span><span></span></div>
+          </div>
+          
+          <div class="content scrollable">
+            <div class="garage-selector">
+              <div class="garage-label">АКТИВНЫЙ БАЙК В ГАРАЖЕ</div>
+              <div class="garage-current">
+                <div class="garage-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="5.5" cy="17.5" r="3.5"/><circle cx="18.5" cy="17.5" r="3.5"/><path d="M15 6h-4l-3 6h7l-2 5.5"/><path d="M5.5 17.5L9 9"/></svg>
+                </div>
+                <div class="garage-info">
+                  <div class="garage-name">KAYO K1 250 MX '23</div>
+                  <div class="garage-sub">172FMM-3A / 21/18 Колеса</div>
+                </div>
+                <span class="garage-change-badge">СМЕНИТЬ</span>
+              </div>
+            </div>
+
+            <div class="search-box">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <input type="text" placeholder="Поиск детали, артикула или узла..." value="Звезда ведомая 520">
+              <button class="search-filter-btn" aria-label="Фильтры">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg>
+              </button>
+            </div>
+
+            <div class="promo-banner">
+              <div class="promo-tag">ТОП СЕЗОНА 2025</div>
+              <div class="promo-title">ГОТОВЬ ЭНДУРО К ГОНКЕ</div>
+              <div class="promo-desc">Комплекты цепей DID 520VX3 и звезды JT со скидкой 15%</div>
+              <button class="btn-primary-sm">ВЫБРАТЬ КОМПЛЕКТ</button>
+            </div>
+
+            <div class="section-title-row">
+              <h3>БЫСТРЫЙ ПОДБОР ПО УЗЛАМ</h3>
+              <a href="#" class="link-all">ВСЕ 24</a>
+            </div>
+
+            <div class="categories-grid">
+              <div class="cat-card active">
+                <div class="cat-code">01</div>
+                <div class="cat-name">ПРИВОД И ЦЕПИ</div>
+                <div class="cat-count">148 дет.</div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-code">02</div>
+                <div class="cat-name">ТОРМОЗА И КОЛОДКИ</div>
+                <div class="cat-count">92 дет.</div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-code">03</div>
+                <div class="cat-name">ЦПГ И ДВИГАТЕЛЬ</div>
+                <div class="cat-count">310 дет.</div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-code">04</div>
+                <div class="cat-name">ПОДВЕСКА И РЫЧАГИ</div>
+                <div class="cat-count">64 дет.</div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-code">05</div>
+                <div class="cat-name">МАСЛА И СМАЗКИ</div>
+                <div class="cat-count">45 дет.</div>
+              </div>
+              <div class="cat-card">
+                <div class="cat-code">06</div>
+                <div class="cat-name">ПЛАСТИК И ГРАФИКА</div>
+                <div class="cat-count">118 дет.</div>
+              </div>
+            </div>
+
+            <div class="section-title-row">
+              <h3>ЧАСТО ВЫХОДЯТ ИЗ СТРОЯ</h3>
+            </div>
+
+            <div class="quick-feed">
+              <div class="feed-item">
+                <div class="feed-item-badge">В НАЛИЧИИ</div>
+                <div class="feed-item-title">Рычаг сцепления легкого выжима CNC 3-пальца</div>
+                <div class="feed-item-bottom">
+                  <span class="feed-price">2 490 ₽</span>
+                  <button class="feed-add-btn">+</button>
+                </div>
+              </div>
+              <div class="feed-item">
+                <div class="feed-item-badge compat">100% ПОДХОДИТ</div>
+                <div class="feed-item-title">Свеча зажигания NGK DPR8EA-9 (Japan)</div>
+                <div class="feed-item-bottom">
+                  <span class="feed-price">680 ₽</span>
+                  <button class="feed-add-btn">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAB BAR -->
+          <nav class="tab-bar">
+            <div class="tab-item active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Главная</span>
+            </div>
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              <span>Каталог</span>
+            </div>
+            <div class="tab-item badge-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span class="tab-counter">2</span>
+              <span>Корзина</span>
+            </div>
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Гараж</span>
+            </div>
+          </nav>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+      <div class="screen-label">01 // Главный экран и быстрый подбор</div>
+    </div>
+
+    <!-- ЭКРАН 2: КАТАЛОГ С ФИЛЬТРАМИ -->
+    <div class="phone-wrapper">
+      <div class="phone">
+        <div class="screen">
+          <div class="twa-header">
+            <span class="twa-btn-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></span>
+            <span class="twa-title">ПРИВОД И ЦЕПИ</span>
+            <div class="twa-dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="content scrollable">
+            <div class="compat-indicator-bar">
+              <span class="dot-green"></span>
+              <span>Фильтр по совместимости: <strong>KAYO K1 250</strong></span>
+              <button class="compat-toggle">ИЗМЕНИТЬ</button>
+            </div>
+
+            <!-- Фильтр-чипсы -->
+            <div class="filter-chips">
+              <button class="chip active">Все (48)</button>
+              <button class="chip">Звезды 520</button>
+              <button class="chip">Цепи O-Ring</button>
+              <button class="chip">Ловушки</button>
+              <button class="chip">Слайдеры</button>
+            </div>
+
+            <div class="catalog-sort-meta">
+              <span>НАЙДЕНО: 18 ЗАПЧАСТЕЙ</span>
+              <span class="sort-trigger">ПО ЦЕНЕ ↓</span>
+            </div>
+
+            <!-- Список товаров -->
+            <div class="catalog-list">
+              
+              <!-- Товар 1 -->
+              <div class="product-row">
+                <div class="product-thumb">
+                  <div class="part-svg-preview sprocket">
+                    <svg viewBox="0 0 60 60" fill="none" stroke="#FFFFFF" stroke-width="2">
+                      <circle cx="30" cy="30" r="22" stroke-dasharray="3 2"/>
+                      <circle cx="30" cy="30" r="14"/>
+                      <circle cx="30" cy="30" r="6"/>
+                      <line x1="30" y1="8" x2="30" y2="16"/>
+                      <line x1="30" y1="44" x2="30" y2="52"/>
+                      <line x1="8" y1="30" x2="16" y2="30"/>
+                      <line x1="44" y1="30" x2="52" y2="30"/>
+                    </svg>
+                  </div>
+                  <span class="brand-tag">JT SPROCKETS</span>
+                </div>
+                <div class="product-info">
+                  <div class="fit-badge ok">ТОЧНОЕ СОВПАДЕНИЕ</div>
+                  <div class="product-title">Звезда ведомая 520-45T Сталь C49</div>
+                  <div class="product-sku">АРТ: JTR210.45 // 45 ЗУБЬЕВ</div>
+                  <div class="product-footer">
+                    <div class="price-block">
+                      <span class="price-val">2 850 ₽</span>
+                      <span class="stock-val">Склад МСК: 8 шт</span>
+                    </div>
+                    <button class="btn-buy-icon" aria-label="В корзину">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Товар 2 -->
+              <div class="product-row featured-row">
+                <div class="product-thumb">
+                  <div class="part-svg-preview chain">
+                    <svg viewBox="0 0 60 60" fill="none" stroke="#0A5CFF" stroke-width="2">
+                      <rect x="8" y="24" width="16" height="12" rx="4"/>
+                      <rect x="36" y="24" width="16" height="12" rx="4"/>
+                      <rect x="22" y="20" width="16" height="20" rx="4"/>
+                      <circle cx="16" cy="30" r="2" fill="#0A5CFF"/>
+                      <circle cx="44" cy="30" r="2" fill="#0A5CFF"/>
+                    </svg>
+                  </div>
+                  <span class="brand-tag">D.I.D JAPAN</span>
+                </div>
+                <div class="product-info">
+                  <div class="fit-badge ok">УСИЛЕННАЯ СЕРИЯ</div>
+                  <div class="product-title">Цепь приводная 520 VX3 Gold 114L (Сальниковая X-Ring)</div>
+                  <div class="product-sku">АРТ: DID520VX3-114G // ЗАМОК В КОМПЛЕКТЕ</div>
+                  <div class="product-footer">
+                    <div class="price-block">
+                      <span class="price-val">8 990 ₽</span>
+                      <span class="stock-val">Склад МСК: 3 шт</span>
+                    </div>
+                    <button class="btn-buy-icon in-cart" aria-label="В корзине">✓</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Товар 3 -->
+              <div class="product-row">
+                <div class="product-thumb">
+                  <div class="part-svg-preview guide">
+                    <svg viewBox="0 0 60 60" fill="none" stroke="#FFFFFF" stroke-width="2">
+                      <path d="M10 20 L50 20 L42 42 L18 42 Z"/>
+                      <circle cx="24" cy="31" r="3"/>
+                      <circle cx="36" cy="31" r="3"/>
+                    </svg>
+                  </div>
+                  <span class="brand-tag">OTOM CNC</span>
+                </div>
+                <div class="product-info">
+                  <div class="fit-badge neutral">УНИВЕРСАЛЬНАЯ</div>
+                  <div class="product-title">Ловушка цепи фрезерованная CNC Алюминий/Нейлон</div>
+                  <div class="product-sku">АРТ: OT-CG01-BL // МАЯТНИК АЛЮМИНИЙ</div>
+                  <div class="product-footer">
+                    <div class="price-block">
+                      <span class="price-val">1 950 ₽</span>
+                      <span class="stock-val">Склад СПб: 12 шт</span>
+                    </div>
+                    <button class="btn-buy-icon" aria-label="В корзину">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <nav class="tab-bar">
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span>Главная</span>
+            </div>
+            <div class="tab-item active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              <span>Каталог</span>
+            </div>
+            <div class="tab-item badge-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span class="tab-counter">2</span>
+              <span>Корзина</span>
+            </div>
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Гараж</span>
+            </div>
+          </nav>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+      <div class="screen-label">02 // Каталог с точными фильтрами и списком</div>
+    </div>
+
+    <!-- ЭКРАН 3: КАРТОЧКА ДЕТАЛИ -->
+    <div class="phone-wrapper">
+      <div class="phone">
+        <div class="screen">
+          <div class="twa-header">
+            <span class="twa-btn-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></span>
+            <span class="twa-title">АРТИКУЛ #JTR210.45</span>
+            <span class="twa-share-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </span>
+          </div>
+
+          <div class="content scrollable">
+            <!-- Спек-визуализатор -->
+            <div class="spec-hero-card">
+              <div class="spec-hero-bg">
+                <svg viewBox="0 0 200 200" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1.5">
+                  <circle cx="100" cy="100" r="90"/>
+                  <circle cx="100" cy="100" r="60"/>
+                  <circle cx="100" cy="100" r="30"/>
+                  <line x1="0" y1="100" x2="200" y2="100"/>
+                  <line x1="100" y1="0" x2="100" y2="200"/>
+                </svg>
+              </div>
+              <div class="spec-part-render">
+                <svg viewBox="0 0 120 120" fill="none" stroke="#FFFFFF" stroke-width="2.5">
+                  <circle cx="60" cy="60" r="48" stroke="#0A5CFF" stroke-width="3" stroke-dasharray="8 4"/>
+                  <circle cx="60" cy="60" r="28"/>
+                  <circle cx="60" cy="60" r="12" fill="rgba(10,92,255,0.2)"/>
+                  <circle cx="60" cy="38" r="4" fill="#FFFFFF"/>
+                  <circle cx="60" cy="82" r="4" fill="#FFFFFF"/>
+                  <circle cx="38" cy="60" r="4" fill="#FFFFFF"/>
+                  <circle cx="82" cy="60" r="4" fill="#FFFFFF"/>
+                </svg>
+              </div>
+              <div class="spec-hero-badges">
+                <span class="hero-badge-tag">MADE IN THAILAND</span>
+                <span class="hero-badge-tag accent">C49 HIGH CARBON STEEL</span>
+              </div>
+            </div>
+
+            <div class="card-details-block">
+              <div class="fit-status-banner verified">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A5CFF" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                <div class="fit-status-text">
+                  <strong>100% СОВМЕСТИМО</strong> с вашим KAYO K1 250 (ступица 4x100мм)
+                </div>
+              </div>
+
+              <h2 class="card-product-title">Звезда ведомая JT Sprockets 520 / 45T Стальная</h2>
+              <div class="card-price-row">
+                <div class="main-price">2 850 ₽</div>
+                <div class="old-price">3 400 ₽</div>
+                <div class="economy-badge">-16%</div>
+              </div>
+
+              <div class="tech-specs-table">
+                <div class="spec-row"><span class="k">Шаг цепи:</span><span class="v">520 (15.875 мм)</span></div>
+                <div class="spec-row"><span class="k">Количество зубьев:</span><span class="v">45T (Тяговая звезда)</span></div>
+                <div class="spec-row"><span class="k">Внутренний диаметр:</span><span class="v">125 мм</span></div>
+                <div class="spec-row"><span class="k">Разболтовка:</span><span class="v">4 отверстия x 145 мм</span></div>
+                <div class="spec-row"><span class="k">Материал:</span><span class="v">Углеродистая сталь C49</span></div>
+              </div>
+
+              <div class="compatibility-accordion">
+                <div class="acc-header">
+                  <span>ПРОВЕРЕННАЯ СОВМЕСТИМОСТЬ (8 МОДЕЛЕЙ)</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+                </div>
+                <div class="acc-body">
+                  <div class="bike-tag ok">Kayo K1 / T2 / T4 Enduro</div>
+                  <div class="bike-tag ok">BSE Z1 / Z2 250</div>
+                  <div class="bike-tag ok">GR2 / GR7 250 (Lite/Optimum)</div>
+                  <div class="bike-tag ok">Racer Panther 250/300</div>
+                  <div class="bike-tag warn">Avantis FX 250 (проверьте болты 8.5мм)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Кнопка Telegram MainButton -->
+          <div class="twa-bottom-action">
+            <div class="qty-stepper">
+              <button class="step-btn">-</button>
+              <span class="step-val">1</span>
+              <button class="step-btn">+</button>
+            </div>
+            <button class="twa-main-button">
+              <span>ДОБАВИТЬ В КОРЗИНУ</span>
+              <span class="btn-subtotal">2 850 ₽</span>
+            </button>
+          </div>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+      <div class="screen-label">03 // Карточка запчасти и проверка совместимости</div>
+    </div>
+
+    <!-- ЭКРАН 4: КОРЗИНА И ОФОРМЛЕНИЕ -->
+    <div class="phone-wrapper">
+      <div class="phone">
+        <div class="screen">
+          <div class="twa-header">
+            <span class="twa-btn-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg></span>
+            <span class="twa-title">КОРЗИНА (2 ПОЗИЦИИ)</span>
+            <span class="twa-clear-btn">Очистить</span>
+          </div>
+
+          <div class="content scrollable">
+            <div class="cart-items-group">
+              
+              <!-- Позиция 1 -->
+              <div class="cart-item">
+                <div class="cart-item-head">
+                  <div class="cart-title">Звезда ведомая JT 520 / 45T</div>
+                  <button class="cart-del-btn">×</button>
+                </div>
+                <div class="cart-item-meta">Арт: JTR210.45 // Склад МСК</div>
+                <div class="cart-item-bottom">
+                  <div class="cart-price">2 850 ₽</div>
+                  <div class="qty-mini-stepper">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Позиция 2 -->
+              <div class="cart-item">
+                <div class="cart-item-head">
+                  <div class="cart-title">Цепь D.I.D 520 VX3 Gold (114 звеньев)</div>
+                  <button class="cart-del-btn">×</button>
+                </div>
+                <div class="cart-item-meta">Арт: DID520VX3-114G // Замок защелка</div>
+                <div class="cart-item-bottom">
+                  <div class="cart-price">8 990 ₽</div>
+                  <div class="qty-mini-stepper">
+                    <button>-</button>
+                    <span>1</span>
+                    <button>+</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Доставка и Telegram-данные -->
+            <div class="checkout-block">
+              <div class="block-title">СПОСОБ ПОЛУЧЕНИЯ</div>
+              <div class="delivery-tabs">
+                <div class="d-tab active">СДЭК Экспресс</div>
+                <div class="d-tab">Яндекс Доставка</div>
+                <div class="d-tab">Самовывоз</div>
+              </div>
+
+              <div class="input-field-group">
+                <label>АДРЕС ПВЗ ИЛИ ГОРОД</label>
+                <input type="text" class="twa-input" value="Москва, ул. Складочная, д. 1с1 (СДЭК)">
+              </div>
+
+              <div class="input-field-group">
+                <label>ПОЛУЧАТЕЛЬ В TELEGRAM</label>
+                <div class="tg-autofill-box">
+                  <div class="tg-avatar">MK</div>
+                  <div class="tg-user-data">
+                    <div class="tg-name">Максим Ковалев (@enduro_rider77)</div>
+                    <div class="tg-phone">+7 (926) 840-12-90</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-summary-box">
+                <div class="sum-row"><span>Товары (2 шт):</span><span>11 840 ₽</span></div>
+                <div class="sum-row"><span>Доставка СДЭК:</span><span>350 ₽</span></div>
+                <div class="sum-row discount"><span>Скидка за комплект:</span><span>-450 ₽</span></div>
+                <div class="sum-divider"></div>
+                <div class="sum-total-row"><span>ИТОГО К ОПЛАТЕ:</span><span class="total-val">11 740 ₽</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="twa-bottom-action">
+            <button class="twa-main-button payment-btn">
+              <span>ОПЛАТИТЬ ЧЕРЕЗ СБП / КАРТОЙ</span>
+              <span class="btn-subtotal">11 740 ₽</span>
+            </button>
+          </div>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+      <div class="screen-label">04 // Корзина и экспресс-оформление Telegram</div>
+    </div>
+
+    <!-- ЭКРАН 5: ПРОФИЛЬ, ГАРАЖ И ПОДДЕРЖКА -->
+    <div class="phone-wrapper">
+      <div class="phone">
+        <div class="screen">
+          <div class="twa-header">
+            <span class="twa-title">ПРОФИЛЬ И ГАРАЖ</span>
+            <div class="twa-dots"><span></span><span></span><span></span></div>
+          </div>
+
+          <div class="content scrollable">
+            <div class="profile-header-card">
+              <div class="profile-avatar-big">
+                <span>MK</span>
+                <div class="pro-badge">PRO</div>
+              </div>
+              <div class="profile-meta">
+                <div class="profile-fullname">Максим Ковалев</div>
+                <div class="profile-handle">@enduro_rider77 // ID: 894120</div>
+                <div class="profile-cashback">Кэшбэк на запчасти: <strong>1 420 баллов</strong></div>
+              </div>
+            </div>
+
+            <!-- Раздел Гараж -->
+            <div class="garage-management-section">
+              <div class="section-title-row">
+                <h3>МОЙ ГАРАЖ (2 БАЙКА)</h3>
+                <button class="btn-add-bike">+ ДОБАВИТЬ</button>
+              </div>
+
+              <div class="bike-card active-bike">
+                <div class="bike-status-tag">АКТИВЕН ДЛЯ ПОДБОРА</div>
+                <div class="bike-title">KAYO K1 250 MX (2023)</div>
+                <div class="bike-specs-grid">
+                  <div><span>Мотор:</span> 172FMM-3A</div>
+                  <div><span>Колеса:</span> 21/18</div>
+                  <div><span>Цепь:</span> 520 / 108L</div>
+                  <div><span>Масло:</span> 10W-40 4T (1.1L)</div>
+                </div>
+              </div>
+
+              <div class="bike-card secondary-bike">
+                <div class="bike-title">WELS RT140 Pitbike (2022)</div>
+                <div class="bike-specs-grid">
+                  <div><span>Мотор:</span> YX140 (1P56FMJ)</div>
+                  <div><span>Колеса:</span> 17/14</div>
+                </div>
+                <button class="btn-switch-bike">Сделать активным</button>
+              </div>
+            </div>
+
+            <!-- История заказов -->
+            <div class="orders-section">
+              <div class="section-title-row">
+                <h3>ПОСЛЕДНИЕ ЗАКАЗЫ</h3>
+              </div>
+
+              <div class="order-mini-card">
+                <div class="order-head">
+                  <span class="order-num">#MS-78923</span>
+                  <span class="order-status delivered">В ПУТИ (СДЭК)</span>
+                </div>
+                <div class="order-summary-text">Колодки тормозные медные + Масло Eni Offroad 10W-50</div>
+                <div class="order-foot">
+                  <span>Трек: 14892019481</span>
+                  <span class="order-price">3 890 ₽</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Кнопки поддержки -->
+            <div class="support-channels">
+              <a href="#" class="support-btn tg-tech">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <div class="support-text">
+                  <strong>ИНЖЕНЕР ПО ПОДБОРУ В TELEGRAM</strong>
+                  <span>Ответим за 2 минуты и проверим совместимость</span>
+                </div>
+              </a>
+              <a href="#" class="support-btn faq-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+                <div class="support-text">
+                  <strong>СПРАВОЧНИК МАСЕЛ И ЗАЗОРОВ КЛАПАНОВ</strong>
+                  <span>Таблицы моментов затяжки и регламентов</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <nav class="tab-bar">
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              <span>Главная</span>
+            </div>
+            <div class="tab-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+              <span>Каталог</span>
+            </div>
+            <div class="tab-item badge-tab">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+              <span class="tab-counter">2</span>
+              <span>Корзина</span>
+            </div>
+            <div class="tab-item active">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <span>Гараж</span>
+            </div>
+          </nav>
+          <div class="home-indicator"></div>
+        </div>
+      </div>
+      <div class="screen-label">05 // Гараж байков, история заказов и поддержка</div>
+    </div>
+
+  </main>
+
+  <footer class="artboard-footer">
+    <div class="footer-inner">
+      <div class="footer-copy">MOTO-SPEC Telegram Web App (TWA) // Enduro & Pitbike Spare Parts Ecosystem</div>
+      <div class="footer-tags">iOS / Android Ready • 390px Viewport • Strict Monochrome + Electric Blue</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
